@@ -10,4 +10,6 @@ spec = Gem::Specification.new do |s|
   s.homepage = "http://alexbarlow.com"
   s.files = Dir['**/*'] - [__FILE__]
   s.executable = "rhessus"
+  s.add_dependency('activeresource', '>= 2.3.5')
+  s.add_dependency('daemons', '>= 1.0.10')
 end

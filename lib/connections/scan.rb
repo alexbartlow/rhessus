@@ -1,5 +1,6 @@
 require 'rubygems'
-require 'activeresource'
+gem 'activeresource'
+require 'active_resource'
 module Rhessus
   class Scan < ActiveResource::Base
     class << self

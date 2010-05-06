@@ -1,6 +1,22 @@
 rhessus
 =======
 
+Usage
+-----
+    ruby -Ilib bin/rhessus run --help
+    Usage: rhessus [options]
+        -h, --host [HOST]                The host running the scanner (default localhost)
+        -u, --username USER              The username on the nessus scanner
+        -p, --password PASS              The password for the scanner
+        -o, --port [PORT]                The port of the nessus scanner (default 1241)
+        -s, --site SITE                  Site to push uploads (incl. http://)
+        -n, --nessus NESSUS              Nessus executable (unneeded if in path)
+        -H, --help                       Show this message
+
+
+Server-Side Requisites
+----------------------
+
 Rhessus is a scan manager to hook up your nessus install to a RESTful interface (As through Active Resource) to pull scans from a central server.
 
 By default, you should provide checkout, checkin, and failure methods on the resource. This resource should have a 'targets' method that returns a nessus scan file (IP Ranges, etc)

@@ -1,6 +1,5 @@
 require File.join 'connections', 'scan'
 require 'optparse'
-require 'fastercsv'
 require 'scan_runner'
 module Rhessus
   VERSION = '0.1.0'
