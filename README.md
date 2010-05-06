@@ -1,4 +1,5 @@
-= rhessus
+rhessus
+=======
 
 Rhessus is a scan manager to hook up your nessus install to a RESTful interface (As through Active Resource) to pull scans from a central server.
 
@@ -24,9 +25,10 @@ The Checkin method should accept the 'results' field of the scan being filled wi
     
 The failure method should unlock the scan, so another scanner can come by later and pick it up.
 
-= License
+License
+=======
 Copyright (c) 2009 Alex Bartlow
-
+-------------------------------
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
 'Software'), to deal in the Software without restriction, including
