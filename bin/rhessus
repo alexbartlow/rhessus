@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'rhessus'
+require 'daemons'
+
+Rhessus.init
+
+Daemons.run_proc('rhessus') do  
+  loop do
+    if Rhessus.system_load_ok? 
+      puts "Attemping to get connection..."
+      Rhessus::ScanRunner.checkout.fire!
+    end
+    sleep(5)
+  end
+end
